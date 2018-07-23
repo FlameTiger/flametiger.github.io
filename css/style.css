@@ -1,0 +1,78 @@
+.wrapper {
+    background: white;
+    width: 550px;
+    height: 550px;
+    margin: 50px auto;
+    position: relative;
+}
+.block1 {
+    position: relative;
+    z-index: 1;
+    width: 250px;
+    height: 250px;
+    background: red;
+    top:50px;
+    left: 50px;
+}
+.block2 {
+    position: absolute;
+    z-index: 1;
+    width: 250px;
+    height: 250px;
+    background: #66ff00;
+    top:70px;
+    left: 260px;
+}
+.block3 {
+    position: absolute;
+    z-index: 1;
+    width: 250px;
+    height: 250px;
+    background: blue;
+    left: 45px;
+    top: 250px;
+}
+.block4 {
+    position: absolute;
+    z-index: 1;
+    width: 250px;
+    height: 250px;
+    background: yellow;
+    top: 280px;
+    left: 270px;
+
+}
+.c  {
+    top: 50%;
+    left: 50%;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: grey;
+    border-radius: 50px;
+}
+
+.block1:hover{
+    z-index: 5;
+}
+.block2:hover{
+    z-index: 5;
+}
+.block3:hover{
+    z-index: 5;
+}
+.block4:hover{
+    z-index: 5;
+}
+.cr {
+    background: black;
+    height: 80px; width: 8px;
+    position: relative; left: 47px; top: 10px;
+    transform: rotate(45deg);
+}
+.cr:after {
+    content: "";
+    height: 8px; width: 80px;
+    background: black;
+    position: absolute; left: -37px; top: 37px;
+}
